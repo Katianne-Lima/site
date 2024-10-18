@@ -1,0 +1,252 @@
+body{
+    background-color: rgb(139,68,20);    
+    color: #ffffff;
+
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes animacao-abertura {
+    50% {
+        transform: scale(3);
+        box-shadow: 15px 15px 10px black;
+        /*box-shadow serve para sombrear a animação*/
+    }
+    100% {transform: scale(1)}
+}
+
+
+.logo-abertura{
+    display: flex;
+    width: 100%;
+    aspect-ratio: unset;
+    height: auto;
+   /* aspect-ratio: 1;*/
+    object-fit: contain;
+
+
+    animation-name: animacao-abertura;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.41,-0.61,
+    .71,1.35);
+
+
+}
+
+
+.paginaSplah{
+    background-color: rgb(139,68,20);
+    border: solid 128px;
+    border: #fe7f2d;
+    border-style: double;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+.oculto{
+    display: none;
+}
+
+
+.paginaDeLogin{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+
+
+    border: solid #ffffff;
+}
+
+
+.entradasLogin{
+    font-size: xx-large;
+    font-weight: bolder;
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: stretch;
+    gap: 20px;
+
+
+}
+
+
+input{
+    font-size: x-large;
+   
+    border: solid;
+    border-color: #fe7f2d;
+
+
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+input[type="file"]{
+    font-size: 16px;
+}
+
+
+.btn{
+    background-color: #c46c34;
+    color: #ffffff;
+
+
+    font-size: x-large;
+    font-weight: bolder;
+
+
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 16px;
+}
+
+
+.nomeLogado{
+    font-size: xx-large;
+
+
+    padding-left: 8px;
+}
+
+
+.botaoCadastrar{
+    font-size: x-large;
+    font-weight: bold;
+
+
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+
+.paginaCadastreAqui{
+    font-size: medium;
+    font-style: italic;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    padding-top: 64px;
+}
+
+
+.container-anuncio{
+    font-size: larger;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 32px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+
+.texto{
+   font-size: x-large;
+   
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+}
+
+
+
+
+.sombreado{
+    border: none;
+    background-color: #fe7f2d;
+    color: black;
+}
+
+
+.form{
+    font-size: xx-large;
+       
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    padding: 8px;
+}
+
+
+.linhaForm{
+    display: flex;
+    flex-direction: column;
+
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+#containerCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px;
+}
+
+
+.card{
+    font-size: large;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;    
+   
+    width: 155px;
+}
+
+
+.img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}

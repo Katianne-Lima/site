@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+
+    <title>Pau pra toda obra</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="pagina1">
+        <form action="#" id="formLogin">
+            <div class="paginaDeLogin">
+                <div class="entradasLogin">
+                    <label for="iptEmail"> EMAIL </label>
+                    <input type="email" id="iptEmail" class="input" required>
+
+
+                    <label for="ipTNome"> NOME </label>
+                    <input type="text" id="ipTNome" class="input" required>
+
+
+                    <label for="iptSenha"> SENHA </label>
+                    <input type="text" id="iptSenha" class="input" required>
+                </div>
+                <div class="botaoCadastrar">
+                    <button id="btnEntrar" class="btn"> ENTRAR </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="pagina2" class="oculto">
+        <div class="paginaCadastreAqui">
+            <div class="nomeLogado">
+                Olá, <span id="nomeUsuario"></span>
+            </div>
+           
+            <div class="container-anuncio">
+                <span class="texto"> De manutenção à construção... </span>
+                <span class="texto sombreado"> Cadastre aqui seus serviços. </span>
+
+
+                <form action="#" class="form" id="formCadastro">
+                    <div class="linhaForm">
+                        <label for="iptFoto"> Foto </label>
+                        <input type="file" id="iptFoto" accept="img/*" class="" required>
+                    </div>
+
+
+                    <div class="linhaForm">
+                        <label for="iptDescricao"> Descrição </label>
+                        <input type="text" id="iptDescricao" class="input" required>
+                    </div>
+
+
+                    <div class="linhaForm">
+                        <label for="iptValor"> Valor </label>
+                        <input type="text" id="iptValor" class="input" required>
+                    </div>
+                   
+                    <div class="botaoCadastrar">
+                        <button id="btnCadastrar" class="btn"> CADASTRAR </button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div id="containerCards"></div>
+        </div>
+    </div>
+
+
+    <script src="classes.js"></script>
+    <script src="designer.js"></script>
+    <script src="controlador.js"></script>
+</body>
+</html>
